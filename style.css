@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#fondo-index {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(img/fondo3.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(2.5);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.enlaces {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+
+.enlaces li {
+    margin-right: 15px;
+    position: relative;
+}
+
+.enlaces li::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #555;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.enlaces li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #555;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+
+.inicio {
+    margin: 100px;
+}
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.inicio h1, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+.inicio p {
+    margin-top: 15vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+.inicio h1, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Fira Code', monospace;
+}
