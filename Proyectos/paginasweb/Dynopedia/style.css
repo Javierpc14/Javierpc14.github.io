@@ -1,0 +1,112 @@
+body{
+    background-image: url("img/fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Edicion de la tabla */
+table{
+    margin-left: 3vw;
+    margin-top: 0vh;
+    background: linear-gradient(0deg, rgba(28,111,119,1) 0%, rgba(193,235,221,1) 83%, rgba(213,250,233,1) 100%);
+
+}
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+    padding-right: 30px;
+    
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos generales para los botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo para el botón de "Actualizar" */
+  .actualizar {
+    background-color: #33b758;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding:2%;
+    width: 100%;;
+  }
+  
+  .actualizar:hover {
+    background-color: #34c85e;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .actualizar:active {
+    background-color: #2fb853;
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  /* Estilo para el botón de "Borrar" */
+  .borrar {
+    background-color: #f04343;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding:2%;
+    width: 100%;;
+  }
+  
+  .borrar:hover {
+    background-color: #d93b3b;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .borrar:active {
+    background-color: #c53333;
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  /* Estilo para el botón de "Insertar" */
+  .insertar {
+    background-color: #0e4371;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding:2%;
+    width: 20%;;
+  }
+  
+  .insertar:hover {
+    background-color: #1a77c2;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .insertar:active {
+    background-color: #196fad;
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  
+
+/* Edicion del indice */
+aside{
+    margin-top: 0vh;
+    margin-left: 0vw;
+}

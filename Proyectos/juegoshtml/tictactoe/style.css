@@ -1,0 +1,322 @@
+body {
+    background-color: rgb(46, 9, 106);
+}
+
+p {
+    border: 1px solid black;
+    height: 70px;
+    width: 200px;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Inicio del contador X */
+.contadorX {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: -133px auto;
+    padding: 0 auto;
+    top: -477px;
+    left: -37vw;
+}
+
+.contadorX {
+    position: relative;
+    background-color: rgb(255, 178, 254);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #b602de;
+    box-shadow:
+        0 0 5px #b602de,
+        0 0 10px #b602de,
+        0 0 20px #b602de,
+        0 0 40px #b602de,
+        0 0 80px #b602de;
+}
+
+.contadorX::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #b900ff, #b602de);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+/* Fin del contador X */
+
+/* Inicio del contador O */
+.contadorO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: -400px;
+    left: -17vw;
+}
+
+.contadorO {
+    position: relative;
+    background-color: rgb(255, 178, 254);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #b602de;
+    box-shadow:
+        0 0 5px #b602de,
+        0 0 10px #b602de,
+        0 0 20px #b602de,
+        0 0 40px #b602de,
+        0 0 80px #b602de;
+}
+
+.contadorO::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #b900ff, #b602de);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+/* Fin del contador O */
+
+/* Inicio del contador de empate */
+.contadorEm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: -344px;
+    left: -37vw;
+}
+
+.contadorEm {
+    position: relative;
+    background-color: rgb(255, 178, 254);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #d661f1;
+    box-shadow:
+        0 0 5px #d661f1,
+        0 0 10px #d661f1,
+        0 0 20px #d661f1,
+        0 0 40px #d661f1,
+        0 0 80px #d661f1;
+}
+
+.contadorEm::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #b900ff, #d661f1);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+/* Fin del contador de empate */
+
+/* Inicio del contador del turno */
+#turno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: -400px;
+    left: -17vw;
+}
+
+#turno {
+    position: relative;
+    background-color: rgb(255, 178, 254);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #d661f1;
+    box-shadow:
+        0 0 5px #d661f1,
+        0 0 10px #d661f1,
+        0 0 20px #d661f1,
+        0 0 40px #d661f1,
+        0 0 80px #d661f1;
+}
+
+#turno::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #b900ff, #d661f1);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+/* Fin del contador del turno */
+
+/*Inicio del boton*/
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: -320px;
+    left: -27vw;
+    padding: 20px;
+    padding-left: 14.3vw;
+    padding-right: 14.3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    position: relative;
+    background-color: rgb(255, 178, 254);
+    border: 4px solid #fff;
+    height: 100%;
+    border-color: #ff00ff;
+    box-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, #b900ff, #ff00ff);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+/*Fin del boton*/
+
+/* Inicio del texto de victoria */
+.victoriaTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: linear-gradient(0deg, rgb(188, 0, 240), rgb(225, 0, 255));
+    top: 480px;
+    left: 8.5vw;
+    position: absolute;
+}
+/* Fin del texto de victoria */
+
+
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 621px;
+    width: 633px;
+    margin-left: 50vw;
+    margin-top: -8vh;
+    background-color: #ff0;
+}
+
+.caja {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.casilla {
+    position: relative;
+    background-color: black;
+    font-size: 142px;
+    background-color: rgb(46, 9, 106);
+}
+
+.casilla::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.casilla:hover::before {
+    opacity: 1;
+}
+
+.casilla:hover {
+    border-color: #ff0;
+    box-shadow:
+        0 0 5px #ff0,
+        0 0 10px #ff0,
+        0 0 20px #ff0,
+        0 0 40px #ff0,
+        0 0 80px #ff0;
+}
+
+.ganadora {
+    background-color: rgb(179, 247, 107);
+}
+
+/* Inicio transiciones del neon */
+@keyframes neon-animation {
+    from {
+        opacity: 0.8;
+        box-shadow:
+            0 0 5px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 40px #ff00ff,
+            0 0 80px #ff00ff;
+    }
+
+    to {
+        opacity: 0.2;
+        box-shadow:
+            0 0 5px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 30px #b900ff,
+            0 0 40px #b900ff,
+            0 0 70px #b900ff,
+            0 0 80px #b900ff;
+    }
+}
+/*Fin transiciones del neon*/

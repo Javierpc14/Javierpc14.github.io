@@ -1,0 +1,18 @@
+body{
+    background-image: url("img/fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 8vh;
+}
+
+ul, a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

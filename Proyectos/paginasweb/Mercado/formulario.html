@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/jpg" href="img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier">
+    <meta name="description" content="Pagina web de la pescaderia A.Lopez">
+    <meta name="Keywords" content="pez, marisco, pescaderia, Madrid, Mercado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        @import url(formulariostyle.css);
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="#" target="" method="get" name="iniciarsesion">
+            <!-- Insercción del nombre -->
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+            <br>
+            <!-- Insercción de apellidos -->
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellido" />
+            <br>
+            <!-- Insercción de email -->
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="email" required />
+            <br>
+            <!-- Insercción de contraseña -->
+            <label for="asunto">Contraseña</label><br>
+            <input type="password" name="password" id="password" placeholder="Contraseña" />
+
+            <!-- Boton de enviar -->
+            <input type="submit" name="enviar" value="Enviar datos" />
+
+            <!-- Enlace que vuelve a la pagina principal -->
+            <div class="enlace">
+                <a href="index.html">
+                    <p>Volver a la pagina principal</p>
+                </a>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+/* Edicion del header */
+
+main{
+    display: flex;
+}
+
+
+
+.cabecera {
+    top :0;
+    width: 100%;
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(20deg, rgb(3, 141, 187), rgb(139, 132, 229), rgb(155, 7, 188), rgb(176, 146, 26));
+}
+
+.listaNav li {
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 20px;
+    text-align: right;
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+}
+
+.listaNav li:hover{
+    color:blue;
+}
+
+.buscador {
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Edicion del main */
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    margin-top: 120px;
+    margin-left: 215px;
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+h1{
+    margin-top: 1vh;
+    font-size: 5vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+h2{
+    font-size: 3vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+h3{
+    font-size: 2.5vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#saurisquios p:nth-child(2n - 1){
+    background-color:rgb(187, 187, 187);
+    margin-left: 450px;
+    margin-right: 450px;
+}
+#saurisquios h3::first-letter{
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(136, 87, 7);
+}
+
+#ornitrisquios p:nth-child(2n - 1){
+    background-color:rgb(187, 187, 187);
+    margin-left: 450px;
+    margin-right: 450px;
+}
+#ornitrisquios h3::first-letter{
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(136, 87, 7);
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+
+#saurisquios {
+    background-color: rgb(255, 255, 255);
+}
+
+#banner {
+    height: 25vh;
+    width: 50vw;
+}
+
+#dos {
+    flex-grow: 1;
+}
+
+ul li {
+    list-style: none;
+}
+
+.contenido {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50em;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+a:visited {
+    color: white;
+}

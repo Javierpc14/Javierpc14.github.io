@@ -1,0 +1,561 @@
+/* Esto hace que el nav se baje junto a la pagina */
+.encabezado {
+    position: sticky;
+    top: 0px;
+}
+
+header img[src="img/cabecera.PNG"] {
+    margin-top: -10px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+/* Edicion de la imagen del cartel */
+.logo {
+    margin-top: -10px;
+    width: 280px;
+    height: 120px;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    z-index: 5;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+/* Aquí empiezo a añadirle los efectos al boton de inicio */
+nav div a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(96, 189, 158);
+}
+
+nav div a:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+nav div a:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+nav div a:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+nav div a:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(135, 203, 255);
+}
+
+nav div::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #4b717a;
+    transform: skewX(-41deg);
+}
+
+nav div::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #4b717a;
+    transform: skewY(-49deg);
+}
+
+nav div a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #36a6bf;
+    color: #fff;
+    font-size: 25px;
+    transition: 1.1s ease-out;
+}
+
+nav div:hover a {
+    z-index: 1000;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+nav div:hover a:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+nav div:hover a:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+nav div:hover a:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+nav div:hover a:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+nav div:hover a:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+nav div:nth-child(1):hover a {
+    background: #8035f0;
+}
+
+/*final de boton de inicio*/
+
+/* Edicion del titulo de la pescaderia */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(7, 115, 130), rgb(0, 191, 255));
+    height: 100px;
+    margin-top: -1px;
+}
+
+/* Inicio de la edición de la barra lateral */
+form {
+    list-style: none;
+    color: rgb(188, 221, 255);
+    line-height: 2;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lateral h3 {
+    color: rgb(208, 221, 255);
+    padding-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+.lateral ul {
+    list-style: none;
+    font-size: large;
+}
+/* Final de la edición de la barra lateral */
+
+/*Edición contenido principal*/
+.contenido h1 {
+    padding-left: 20px;
+    color: black;
+}
+
+.contenido h3 {
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contenido ul {
+    color: rgb(0, 0, 0);
+    padding-top: 50px;
+}
+
+.contenido li {
+    list-style: none;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pescados {
+    font-size: large;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Edicion de la barra lateral */
+    .lateral {
+        background: linear-gradient(-20deg, rgb(216, 210, 255), rgb(186, 170, 255), rgb(148, 124, 255), rgb(150, 122, 231), rgb(113, 79, 213), rgb(98, 75, 247), rgb(73, 54, 193), rgb(19, 6, 134), rgb(15, 5, 106));
+        margin-top: -10000px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 10000px;
+        width: 100px;
+    }
+
+    .lateral ul ol li {
+        margin-left: -60px;
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .lateral li {
+        list-style: none;
+        color: rgb(188, 221, 255);
+        line-height: 2;
+        margin-left: -40px;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin de la edicion de la barra lateral */
+
+
+    /* Edicion del boton de inicio */
+    nav {
+        margin-top: -5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: linear-gradient(180deg, rgb(7, 115, 130), rgb(0, 191, 255));
+    }
+
+    nav div {
+        transform: rotate(0deg) skew(25deg);
+        transform-style: preserve-3d;
+        position: relative;
+        width: 50vw;
+        height: 10vh;
+        border: none;
+        background: transparent;
+        margin: 20px 100px;
+    }
+
+    /* Fin de edicion del boton de inicio */
+
+
+    /* Edicion del titulo */
+    .presentacion h1 {
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .presentacion a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .presentacion a p {
+        padding-left: 0px;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin de edicion del titulo */
+
+
+    /* Edicion del contenido principal */
+    .contenido {
+        text-align: left;
+        display: flex;
+        background: linear-gradient(-20deg, rgb(145, 145, 255), rgb(170, 170, 255), rgb(185, 185, 248), rgb(215, 215, 255));
+        margin-left: 0px;
+        width: auto;
+        height: 10000px;
+    }
+
+    .contenido img {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Edicion de la barra lateral */
+    .lateral {
+        background: linear-gradient(-20deg, rgb(216, 210, 255), rgb(186, 170, 255), rgb(148, 124, 255), rgb(150, 122, 231), rgb(113, 79, 213), rgb(98, 75, 247), rgb(73, 54, 193), rgb(19, 6, 134), rgb(15, 5, 106));
+        margin-top: -10000px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 10000px;
+        width: 140px;
+    }
+
+    .lateral ul ol li {
+        margin-left: -60px;
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .lateral li {
+        list-style: none;
+        color: rgb(188, 221, 255);
+        line-height: 2;
+        margin-left: -40px;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin edicion de la barra lateral */
+
+
+    /* Edicion del boton de inicio */
+    nav {
+        margin-top: -5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: linear-gradient(180deg, rgb(7, 115, 130), rgb(0, 191, 255));
+    }
+
+    nav div {
+        transform: rotate(0deg) skew(25deg);
+        transform-style: preserve-3d;
+        position: relative;
+        width: 50vw;
+        height: 10vh;
+        border: none;
+        background: transparent;
+        margin: 20px 100px;
+    }
+
+    /* Fin edicion del boton de inicio */
+
+
+    /* Edicion del titulo */
+    .presentacion h1 {
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .presentacion a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .presentacion a p {
+        padding-left: 0px;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin de edicion del titulo */
+
+
+    /* Edicion del contenido principal */
+    .contenido {
+        text-align: left;
+        display: flex;
+        background: linear-gradient(-20deg, rgb(145, 145, 255), rgb(170, 170, 255), rgb(185, 185, 248), rgb(215, 215, 255));
+        margin-left: 0px;
+        width: auto;
+        height: 10000px;
+    }
+
+    .contenido img {
+        height: 100px;
+        width: 200px;
+    }
+
+    /* Fin de edicion del contenido principal */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    /* Edicion de la barra lateral */
+    .lateral {
+        background: linear-gradient(-20deg, rgb(216, 210, 255), rgb(186, 170, 255), rgb(148, 124, 255), rgb(150, 122, 231), rgb(113, 79, 213), rgb(98, 75, 247), rgb(73, 54, 193), rgb(19, 6, 134), rgb(15, 5, 106));
+        margin-top: -10000px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 10000px;
+        width: 300px;
+    }
+
+    .lateral ul ol li {
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .lateral li {
+        list-style: none;
+        color: rgb(188, 221, 255);
+        line-height: 2;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin edicion de la barra lateral */
+
+
+    /* Edicion del botn de inicio */
+    nav {
+        margin-top: -5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: linear-gradient(180deg, rgb(7, 115, 130), rgb(0, 191, 255));
+    }
+
+    nav div {
+        transform: rotate(0deg) skew(25deg);
+        transform-style: preserve-3d;
+        position: relative;
+        width: 80vw;
+        height: 7vh;
+        border: none;
+        background: transparent;
+        margin: 20px 100px;
+
+    }
+
+    /* Fin de la edicion del boton de inicio */
+
+
+    /* Edicion del titulo */
+    .presentacion h1 {
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .presentacion a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .presentacion a p {
+        padding-left: 0px;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin de edicion del titulo */
+
+    /* Edicion del contenido principal */
+    .contenido {
+        text-align: left;
+        display: flex;
+        background: linear-gradient(-20deg, rgb(145, 145, 255), rgb(170, 170, 255), rgb(185, 185, 248), rgb(215, 215, 255));
+        margin-left: 150px;
+        width: auto;
+        height: 10000px;
+    }
+
+    .contenido img {
+        height: 200px;
+        width: 330px;
+    }
+
+    /* Fin de edicion del contenido principal */
+}
+
+@media screen and (min-width: 1280px) {
+    .lateral {
+        background: linear-gradient(-20deg, rgb(216, 210, 255), rgb(186, 170, 255), rgb(148, 124, 255), rgb(150, 122, 231), rgb(113, 79, 213), rgb(98, 75, 247), rgb(73, 54, 193), rgb(19, 6, 134), rgb(15, 5, 106));
+        margin-top: -10000px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 10000px;
+        width: 300px;
+    }
+
+    .lateral ul ol li {
+        list-style: none;
+        color: rgb(255, 255, 255);
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .lateral li {
+        list-style: none;
+        color: rgb(188, 221, 255);
+        line-height: 2;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Edicion del boton de inicio */
+    nav {
+        margin-top: -5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: linear-gradient(180deg, rgb(7, 115, 130), rgb(0, 191, 255));
+    }
+
+    nav div {
+        transform: rotate(0deg) skew(25deg);
+        transform-style: preserve-3d;
+        position: relative;
+        width: 90vw;
+        height: 5vh;
+        border: none;
+        background: transparent;
+        margin: 20px 100px;
+    }
+
+    /* Fin de edicion del boton de inicio */
+
+    /* Edicion del titulo */
+    .presentacion h1 {
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .presentacion a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .presentacion a p {
+        padding-left: 450px;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Fin de edicion del titulo */
+
+
+    /* Edicion del contenido principal */
+    .contenido {
+        text-align: left;
+        display: flex;
+        background: linear-gradient(-20deg, rgb(145, 145, 255), rgb(170, 170, 255), rgb(185, 185, 248), rgb(215, 215, 255));
+        margin-left: 300px;
+        width: auto;
+        height: 10000px;
+    }
+
+    .contenido img {
+        height: 300px;
+        width: 500px;
+    }
+
+    /* Fin de edicion del contenido principal */
+}

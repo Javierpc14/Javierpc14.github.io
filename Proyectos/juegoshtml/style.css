@@ -1,0 +1,62 @@
+
+/* *Edicion de enlaces */
+
+/* ^enlaces index */
+.enlacesPaginas {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.enlacesPaginas h3 {
+    color: #270337;
+    font-size: 36px;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.enlacesPaginas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.enlacesPaginas li {
+    margin-bottom: 10px;
+}
+
+.enlacesPaginas a {
+    text-decoration: none;
+    color: #541d81;
+    font-size: 24px;
+    font-family: 'Fira Code', monospace;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.enlacesPaginas a:hover {
+    color: #6d0ebb;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: #d9eaff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* ^Enlace de volver */
+.volver {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.volver i {
+    color: #ffffff;
+    font-size: 4vh;
+    margin-right: 5px;
+}
+
+.volver i:hover {
+    color: #e291ff;
+}

@@ -1,0 +1,74 @@
+/* Edicion de la imagen de fondo */
+body {
+  background: linear-gradient(to bottom, #4aa0a0, #2d6a6a, #134242);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*Edicion de la caja exterior que contiene todo*/
+form {
+  width: 23vw;
+  padding: 16px;
+  margin-top: 10vh;
+  margin-left: 36vw;
+  background: linear-gradient(to bottom, #00a4b4, #00c9a7, #00e79d, #00ff9c);
+}
+
+/*Edición del texto que aparece*/
+form label {
+  width: 72px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Edicion del boton de enviar datos*/
+form input[type="button"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  display: block;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #1caba6, #13574a);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Edicion del apartado de confirmas la contraseña*/
+form input[type="text"] {
+  width: 20.3vw;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+/*Edicion del boton de retroceso*/
+.fas {
+  color: white;
+  font-size: 30px;
+}
+
+/* Estilo para el botón */
+.enviar {
+  background-color: #0e4371;
+  color: white;
+  border: none;
+  padding: 2%;
+  width: 20%;
+  ;
+  margin-top: 2vh;
+}
+
+.enviar:hover {
+  background-color: #1a77c2;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.enviar:active {
+  background-color: #196fad;
+  transform: scale(0.95);
+  box-shadow: none;
+}

@@ -1,0 +1,40 @@
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+
+.modificar {
+    margin: 10px;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+
+}
+
+.ver {
+    margin: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    color:white
+}
+
+.eliminar {
+    margin: 10px;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+}
