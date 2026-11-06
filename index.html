@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- index.html: esqueleto de la web. Todo el contenido se genera desde js/portfolio-data.js.
+     Normalmente NO necesitas editar este archivo. Todas las rutas son relativas (válido en GitHub Pages). -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Desarrollo de software y videojuegos</title>
+  <meta name="description" content="Portfolio de un estudiante de desarrollo de aplicaciones y diseño de videojuegos.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <a class="logo" href="#inicio">Portfolio</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#formacion">Formación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-label="Presentación"></section>
+    <section id="sobre-mi" class="seccion"></section>
+    <section id="formacion" class="seccion"></section>
+    <section id="habilidades" class="seccion"></section>
+    <section id="proyectos" class="seccion"></section>
+    <section id="contacto" class="seccion"></section>
+  </main>
+
+  <footer id="pie" class="pie"></footer>
+  <button id="arriba" class="arriba" type="button" aria-label="Volver al inicio" hidden>↑</button>
+
+  <!-- Ventanas: ficha de proyecto y visor de imágenes (se rellenan desde main.js) -->
+  <dialog id="modal" aria-labelledby="modalTitulo"></dialog>
+  <dialog id="visor" aria-label="Visor de imágenes"></dialog>
+
+  <!-- Scripts clásicos (no módulos) para que también funcione abriendo index.html con doble clic -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
