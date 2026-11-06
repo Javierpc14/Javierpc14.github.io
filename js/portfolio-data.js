@@ -163,7 +163,7 @@ window.PORTFOLIO = {
       formacion: "GRADO",                 // Clave de "formaciones": DAM o GRADO
       categoria: "videojuegos",           // Clave de "categorias"
       tipoContenido: "unity",             // Clave de "tipos": web, java, android, unity, 3d, arte
-      tecnologias: ["Unity", "C#", "Adboe Photoshop", "IA de imagenes"],       // Texto libre: una tecnología nueva aparece sola en el filtro
+      tecnologias: ["Unity", "C#", "Adboe Photoshop", "IA de imágenes"],       // Texto libre: una tecnología nueva aparece sola en el filtro
       asignatura: "Proyectos de Videojuegos 1",
       fecha: "2025",                      // Año o fecha. Se usa para ordenar
       destacado: false,                   // true = tarjeta grande con insignia
@@ -176,7 +176,7 @@ window.PORTFOLIO = {
         "assets/proyectos/extraterra/ImgGameplay1.png",
         "assets/proyectos/extraterra/ImgGameplay2.png",
         "assets/proyectos/extraterra/ImgGameplay3.png",
-        "assets/proyectos/extraterra/ImgGameplay4.png",
+        "assets/proyectos/extraterra/ImgGameplay4.png"
       ],
       video: "",                          // Enlace de YouTube, Vimeo o archivo .mp4. Carga solo al pulsar
       webgl: "",                          // URL de una demo jugable WebGL (itch.io, GitHub Pages...). Carga al pulsar
@@ -184,12 +184,13 @@ window.PORTFOLIO = {
 
       /* ---- ENLACES (los vacíos no generan botón) ---- */
       itch: "https://wifly-44.itch.io/extraterra",
-      gitlab: "https://gitlab.com/tuusuario/nombre-del-juego",
-      github: "",
+      gitlab: "",
+      github: "https://github.com/Javierpc14/Extraterra",
       demo: "",                           // Demo en otra web o plataforma
       documentacion: "",
       descargas: [                        // APK, ejecutables, modelos... enlazados desde releases o plataformas externas
-        { texto: "Descargar APK", url: "" }
+        { texto: "Documento de diseño (GDD)", url: "assets/proyectos/extraterra/GDD_Extraterra.pdf" },
+        { texto: "Biblia artística", url: "assets/proyectos/extraterra/ArtBible_Extraterra.pdf" }
       ],
 
       /* ---- FICHA DETALLADA ---- */
@@ -202,21 +203,91 @@ window.PORTFOLIO = {
         "Espacio": "Salto",
         "Escape": "Pausar el juego"
       },
-      objetivo: "",
+      objetivo: "Llegar al final del nivel sin perder el 100% de la vida",
       problema: "",                       // Problema que resuelve o finalidad
-      miParticipacion: "Juego desarrollado completamente por mi. Los diesños de los personajes, enemigos, proyectiles, objetos y HUD estan desarrollados completamentes por mi. El fondo lo he cogido de la Asset Store. Programación general desarrollada por mi.",
+      miParticipacion: "Juego desarrollado completamente por mi. Los diesños de los personajes, enemigos, proyectiles, objetos y HUD estan desarrollados completamentes por mi. El fondo lo he descargado de la Asset Store. Programación desarrollada por mi.",
       funcionalidades: [],                // Lista de textos
       dificultades: "",
       soluciones: "",
       aprendizajes: "",
 
       /* Datos técnicos: pares "Etiqueta": "Valor" (o lista). Sirve para género, motor, programa, texturas, técnicas... */
-      datosTecnicos: { "Género": "Platafromas 2D", "Motor": "Unity", "Mecánicas": [] },
+      datosTecnicos: { "Género": "Platafromas 2D", "Motor": "Unity", "Mecánicas": ["salto, disparo, cambio de tiempo"] },
 
       /* Fragmentos de código o consultas SQL con resaltado de sintaxis */
-      codigo: [
-        { titulo: "Ejemplo de fragmento", lenguaje: "Java", codigo: "// Pega aquí un fragmento representativo\npublic int sumar(int a, int b) {\n    return a + b;\n}" }
-      ]
+      // codigo: [
+      //   { titulo: "" }
+      // ]
+    },
+    {
+      /* ---- OBLIGATORIOS ---- */
+      id: "thelastuncoded",          // Único, en minúsculas y sin espacios. Usa el mismo nombre que la carpeta del proyecto
+      titulo: "The Last Uncoded",
+
+      /* ---- CLASIFICACIÓN ---- */
+      formacion: "GRADO",                 // Clave de "formaciones": DAM o GRADO
+      categoria: "videojuegos",           // Clave de "categorias"
+      tipoContenido: "unity",             // Clave de "tipos": web, java, android, unity, 3d, arte
+      tecnologias: ["Unity", "C#", "IA de imágenes", "Adobe Photoshop"],       // Texto libre: una tecnología nueva aparece sola en el filtro
+      asignatura: "Proyectos de Videojuegos 1",
+      fecha: "2025",                      // Año o fecha. Se usa para ordenar
+      destacado: true,                   // true = tarjeta grande con insignia
+      visible: true,                     // false = oculto sin borrarlo (los ejemplos van ocultos)
+
+      /* ---- IMÁGENES Y MEDIOS ---- */
+      imagenPortada: "assets/proyectos/thelastuncoded/IconoFinal.jpg",
+      galeria: [                          // Se amplían con el visor. Si falta una imagen no se rompe nada
+        "assets/proyectos/thelastuncoded/Captura1.png",
+        "assets/proyectos/thelastuncoded/Captura2.png",
+        "assets/proyectos/thelastuncoded/Captura3.png",
+        "assets/proyectos/thelastuncoded/Captura4.png",
+        "assets/proyectos/thelastuncoded/Captura5.png"
+      ],
+      video: "",                          // Enlace de YouTube, Vimeo o archivo .mp4. Carga solo al pulsar
+      webgl: "",                          // URL de una demo jugable WebGL (itch.io, GitHub Pages...). Carga al pulsar
+      modelo3d: "",                       // URL de inserción de Sketchfab (https://sketchfab.com/models/ID/embed)
+
+      /* ---- ENLACES (los vacíos no generan botón) ---- */
+      itch: "https://wifly-44.itch.io/the-last-uncoded",
+      gitlab: "",
+      github: "https://github.com/Javierpc14/TheLastUncoded",
+      demo: "",                           // Demo en otra web o plataforma
+      documentacion: "",
+      descargas: [                        // APK, ejecutables, modelos... enlazados desde releases o plataformas externas
+        { texto: "Documento de diseño (GDD)", url: "assets/proyectos/thelastuncoded/GDD_TheLastUncoded.pdf" },
+        { texto: "Biblia artística", url: "assets/proyectos/thelastuncoded/ArtBible_TheLastUncoded.pdf" }
+      ],
+
+      /* ---- FICHA DETALLADA ---- */
+      descripcion: "Shooter 3D, graficos realistas.",      
+      descripcionCompleta: "Año 2134. La humanidad ha alcanzado niveles tecnológicos inimaginables, llevando la fusión entre biología y máquina al extremo. En una búsqueda de evolución, la mayoría de los humanos optaron por modificar sus cuerpos y mentes, integrándose con sistemas informáticos avanzados. Lo que comenzó como una mejora se convirtió rápidamente en una pesadilla: los humanos modificados empezaron a perder su autonomía, siendo controlados por una inteligencia artificial global cuyo objetivo es crear una utopía puramente lógica, eliminando cualquier forma de disidencia.\n\nNuestro protagonista es uno de los pocos que resistió la transformación. Pronto descubre que los 'integrados han comenzado a cazar a los no modificados, viéndolos como amenazas para el nuevo orden. Atrapado en una instalación aislada y rodeado de enemigos biomecánicos, debe usar todas sus habilidades y armas para sobrevivir el mayor tiempo posible, enfrentándose a oleadas interminables de atacantes sin perder su humanidad.",
+      controles: {
+        "W": "Muévase adelante",
+        "S": "Muévase hacia atrás",
+        "A": "Muévase a izquierda",
+        "D": "Muévase a derecha",
+        "Espacio": "Salto",
+        "Escape": "Pausar el juego",
+        "R": "Recargar arma",
+        "Botón izquierdo del ratón": "Disparar arma",
+        "Botón derecho del ratón": "Apuntar",
+        "Rueda del ratón": "Cambiar de arma"
+      },
+      objetivo: "Sobrevivir el número máximo de rondas posibles.",
+      problema: "",                       // Problema que resuelve o finalidad
+      miParticipacion: "Me encargué de:\n• Programación de los enemigos: movimiento y golpeo.\n• Programación del sistema de vida del jugador. \n• IA de los enemigos.\n• Integración del modelo 3D del enemigo en el juego.\n• Creación del HUD.\n• Iluminación del escenario y animación de las luces para que parpadeen.\n• Creación de la imagen de inicio y el logo.",
+      funcionalidades: [],                // Lista de textos
+      dificultades: "",
+      soluciones: "",
+      aprendizajes: "",
+
+      /* Datos técnicos: pares "Etiqueta": "Valor" (o lista). Sirve para género, motor, programa, texturas, técnicas... */
+      datosTecnicos: { "Género": "Shooter en primera persona", "Motor": "Unity", "Mecánicas": ["salto, disparo, cambio de arma, recarga, powerups"] },
+
+      /* Fragmentos de código o consultas SQL con resaltado de sintaxis */
+      // codigo: [
+      //   { titulo: "" }
+      // ]
     }
   ]
 };
