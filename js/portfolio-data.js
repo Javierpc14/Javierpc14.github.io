@@ -348,7 +348,7 @@ window.PORTFOLIO = {
       // ]
     },
     {
-      /* ---- OBLIGATORIOS ---- */
+      /* ---- BURGUER CLICKER ---- */
       id: "burguerclicker",          // Único, en minúsculas y sin espacios. Usa el mismo nombre que la carpeta del proyecto
       titulo: "Burguer Clicker",
 
