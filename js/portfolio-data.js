@@ -346,6 +346,78 @@ window.PORTFOLIO = {
       // codigo: [
       //   { titulo: "" }
       // ]
+    },
+    {
+      /* ---- OBLIGATORIOS ---- */
+      id: "burguerclicker",          // Único, en minúsculas y sin espacios. Usa el mismo nombre que la carpeta del proyecto
+      titulo: "Burguer Clicker",
+
+      /* ---- CLASIFICACIÓN ---- */
+      formacion: "DAM",                 // Clave de "formaciones": DAM o GRADO
+      categoria: "videojuegos",           // Clave de "categorias"
+      tipoContenido: "android",             // Clave de "tipos": web, java, android, unity, 3d, arte
+      tecnologias: ["Kotlin", "Android Studio", "Firebase"],       // Texto libre: una tecnología nueva aparece sola en el filtro
+      asignatura: "Trabajo de Final de Grado (TFG)",
+      fecha: "2024",                      // Año o fecha. Se usa para ordenar
+      destacado: false,                   // true = tarjeta grande con insignia
+      visible: true,                     // false = oculto sin borrarlo (los ejemplos van ocultos)
+
+      /* ---- IMÁGENES Y MEDIOS ---- */
+      imagenPortada: "assets/proyectos/burguerclicker/portada.png",
+      galeria: [                          // Se amplían con el visor. Si falta una imagen no se rompe nada
+        "assets/proyectos/burguerclicker/captura01.png",
+        "assets/proyectos/burguerclicker/captura08.png",
+        "assets/proyectos/burguerclicker/captura02.png",
+        "assets/proyectos/burguerclicker/captura03.png",
+        "assets/proyectos/burguerclicker/captura04.png",
+        "assets/proyectos/burguerclicker/captura09.png",
+        "assets/proyectos/burguerclicker/captura05.png",
+        "assets/proyectos/burguerclicker/captura06.png",
+        "assets/proyectos/burguerclicker/captura07.png",
+      ],
+      video: "",                          // Enlace de YouTube, Vimeo o archivo .mp4. Carga solo al pulsar
+      webgl: "",                          // URL de una demo jugable WebGL (itch.io, GitHub Pages...). Carga al pulsar
+      modelo3d: "",                       // URL de inserción de Sketchfab (https://sketchfab.com/models/ID/embed)
+
+      /* ---- ENLACES (los vacíos no generan botón) ---- */
+      itch: "",
+      gitlab: "",
+      github: "https://github.com/Javierpc14/BurguerClicker",
+      demo: "",                           // Demo en otra web o plataforma
+      documentacion: "",
+      descargas: [                        // APK, ejecutables, modelos... enlazados desde releases o plataformas externas
+        { texto: "Memoria", url: "assets/proyectos/burguerclicker/Memoria.pdf" }
+      ],
+
+      /* ---- FICHA DETALLADA ---- */
+      descripcion: "Juego clicker para Android en el que cada pulsación suma peso a una hamburguesa, con tiendas, mejoras y logros.",      
+      descripcionCompleta: "Burguer Clicker es un juego de tipo clicker para Android, desarrollado con Kotlin como proyecto final del Grado Superior DAM. Cada pulsación suma peso, y con ese peso se compran tiendas que generan más peso por sí solas y mejoras que multiplican la producción. Las partidas se guardan en la nube con Firebase Realtime Database.",
+      controles: {
+
+      },
+      objetivo: "",
+      problema: "",                       // Problema que resuelve o finalidad
+      miParticipacion: "Proyecto realizado en pareja con mi compañero Andrés Galindo, con metodología Scrum y control de versiones con Git.\n\nMe encargué de:\n• Diseño de las pantallas: hamburguesa, tienda, logros, menú y lista de partidas.\n• Conexión de la app con Firebase Realtime Database.\n• Sistema de logros completo: pantalla, lógica de desbloqueo, guardado en la base de datos, contador y avisos al conseguirlos.\n• Cambio de imagen de la hamburguesa al comprar nuevas tiendas.\n• Menú con el botón de volver a las partidas y el de pausar la música.\n• Sonido: música de fondo, sonidos de cada sección, sonidos aleatorios al pulsar la hamburguesa y sonido al desbloquear logros.\n\nEn colaboración con Andrés: cambio de unidades del peso, guardado de datos y compra de tiendas.",
+      funcionalidades: ["Hasta 3 partidas guardadas en la nube",
+    "Seis tipos de tiendas (panadería, carnicería, quesería, lechuga, huerto y bacon) que generan peso automáticamente",
+    "Más de 30 mejoras que se desbloquean por pasos, para los clics y para cada tienda",
+    "12 logros, por ejemplo alcanzar 100 mg o comprar 20 panaderías",
+    "Música de fondo y efectos de sonido, con botón para pausar la música"],                // Lista de textos
+      dificultades: "",
+      soluciones: "",
+      aprendizajes: "",
+
+      /* Datos técnicos: pares "Etiqueta": "Valor" (o lista). Sirve para género, motor, programa, texturas, técnicas... */
+      datosTecnicos: { "Género": "Clicker",
+    "Plataforma": "Android 7.0 o superior",
+    "Lenguaje": "Kotlin",
+    "Base de datos": "Firebase Realtime Database",
+    "Estructura": "Una actividad y pantallas por fragmentos (Inicio, Tienda, Mejoras, Logros y Menú)" },
+
+      /* Fragmentos de código o consultas SQL con resaltado de sintaxis */
+      // codigo: [
+      //   { titulo: "" }
+      // ]
     }
   ]
 };
