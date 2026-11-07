@@ -231,7 +231,7 @@ window.PORTFOLIO = {
       tecnologias: ["Unity", "C#", "IA de imágenes", "Adobe Photoshop"],       // Texto libre: una tecnología nueva aparece sola en el filtro
       asignatura: "Proyectos de Videojuegos 1",
       fecha: "2025",                      // Año o fecha. Se usa para ordenar
-      destacado: true,                   // true = tarjeta grande con insignia
+      destacado: false,                   // true = tarjeta grande con insignia
       visible: true,                     // false = oculto sin borrarlo (los ejemplos van ocultos)
 
       /* ---- IMÁGENES Y MEDIOS ---- */
@@ -283,6 +283,64 @@ window.PORTFOLIO = {
 
       /* Datos técnicos: pares "Etiqueta": "Valor" (o lista). Sirve para género, motor, programa, texturas, técnicas... */
       datosTecnicos: { "Género": "Shooter en primera persona", "Motor": "Unity", "Mecánicas": ["salto, disparo, cambio de arma, recarga, powerups"] },
+
+      /* Fragmentos de código o consultas SQL con resaltado de sintaxis */
+      // codigo: [
+      //   { titulo: "" }
+      // ]
+    },
+    {
+      /* ---- OBLIGATORIOS ---- */
+      id: "tresenraya",          // Único, en minúsculas y sin espacios. Usa el mismo nombre que la carpeta del proyecto
+      titulo: "Tres en raya",
+
+      /* ---- CLASIFICACIÓN ---- */
+      formacion: "DAM",                 // Clave de "formaciones": DAM o GRADO
+      categoria: "videojuegos",           // Clave de "categorias"
+      tipoContenido: "web",             // Clave de "tipos": web, java, android, unity, 3d, arte
+      tecnologias: ["HTML", "CSS", "JavaScript"],       // Texto libre: una tecnología nueva aparece sola en el filtro
+      asignatura: "Lenguaje de marcas",
+      fecha: "2023",                      // Año o fecha. Se usa para ordenar
+      destacado: false,                   // true = tarjeta grande con insignia
+      visible: true,                     // false = oculto sin borrarlo (los ejemplos van ocultos)
+
+      /* ---- IMÁGENES Y MEDIOS ---- */
+      imagenPortada: "assets/proyectos/tresenraya/captura01.png",
+      galeria: [                          // Se amplían con el visor. Si falta una imagen no se rompe nada
+        "assets/proyectos/tresenraya/captura01.png",
+        "assets/proyectos/tresenraya/captura02.png",
+        "assets/proyectos/tresenraya/captura03.png",
+      ],
+      video: "",                          // Enlace de YouTube, Vimeo o archivo .mp4. Carga solo al pulsar
+      webgl: "",                          // URL de una demo jugable WebGL (itch.io, GitHub Pages...). Carga al pulsar
+      modelo3d: "",                       // URL de inserción de Sketchfab (https://sketchfab.com/models/ID/embed)
+
+      /* ---- ENLACES (los vacíos no generan botón) ---- */
+      itch: "",
+      gitlab: "",
+      github: "https://github.com/Javierpc14/TicTacToe",
+      demo: "assets/proyectos/tresenraya/demo/index.html",                           // Demo en otra web o plataforma
+      documentacion: "",
+      descargas: [                        // APK, ejecutables, modelos... enlazados desde releases o plataformas externas
+        { texto: "" }
+      ],
+
+      /* ---- FICHA DETALLADA ---- */
+      descripcion: "Juego del tres en raya hecho con HTML, CSS y JavaScript.",      
+      descripcionCompleta: "",
+      controles: {
+
+      },
+      objetivo: "",
+      problema: "",                       // Problema que resuelve o finalidad
+      miParticipacion: "Proyecto desarrollado solo por mí",
+      funcionalidades: [],                // Lista de textos
+      dificultades: "",
+      soluciones: "",
+      aprendizajes: "",
+
+      /* Datos técnicos: pares "Etiqueta": "Valor" (o lista). Sirve para género, motor, programa, texturas, técnicas... */
+      datosTecnicos: {  },
 
       /* Fragmentos de código o consultas SQL con resaltado de sintaxis */
       // codigo: [
